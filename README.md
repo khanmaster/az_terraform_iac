@@ -1,12 +1,15 @@
 ![Recourse Group](./source/resource_group.png)
+#### Creates a resource group for all resources under a specified name and location
+
 ```hcl
-# Creates a resource group for all resources under a specified name and location
 resource "azurerm_resource_group" "DevOps" {
   name     = var.name         # Name of the resource group, provided as a variable
   location = var.location     # Location of the resource group, e.g., "East US"
 }
+```
+- Sets up a Network Security Group (NSG) within the resource group to control subnet traffic
 
-# Sets up a Network Security Group (NSG) within the resource group to control subnet traffic
+```hcl
 resource "azurerm_network_security_group" "DevOps" {
   name                = "devops-security-group"              # Unique name for the NSG
   location            = azurerm_resource_group.DevOps.location # Uses location of the resource group

@@ -1,1 +1,1 @@
-![Recourse Group](\source\resource_group.png)
+![Recourse Group](./source/resource_group.png)

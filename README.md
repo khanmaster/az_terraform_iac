@@ -1,4 +1,7 @@
 ![Recourse Group](./source/resource_group.png)
+![Azure Vnet Architecture](./source/vnet-diagram.png)
+
+
 #### Creates a resource group for all resources under a specified name and location
 
 ```hcl
